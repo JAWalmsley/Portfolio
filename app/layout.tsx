@@ -2,12 +2,12 @@ import "../global.css";
 import { Inter } from "@next/font/google";
 import LocalFont from "@next/font/local";
 import { Metadata } from "next";
-import { Analytics } from "./components/analytics";
+// import { Analytics } from "./components/analytics";
 
 export const metadata: Metadata = {
 	title: {
-		default: "chronark.com",
-		template: "%s | chronark.com",
+		default: "Jack Walmsley",
+		template: "%s | Jack Walmsley",
 	},
 	description: "Software engineer at upstash.com and founder of planetfall.io",
 	openGraph: {
@@ -63,7 +63,6 @@ export default function RootLayout({
 	return (
 		<html lang="en" className={[inter.variable, calSans.variable].join(" ")}>
 			<head>
-				<Analytics />
 			</head>
 			<body
 				className={`bg-black ${
