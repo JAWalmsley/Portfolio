@@ -33,7 +33,7 @@ export default async function PostPage({ params }: Props) {
 		<div className="bg-zinc-50 min-h-screen">
 			<Header project={project} views={0} />
 
-			<article className="px-4 py-12 mx-auto prose prose-zinc prose-quoteless">
+			<article className="px-0 py-12 mx-auto w-2/5">
 				<Mdx code={project.body.code} />
 			</article>
 		</div>

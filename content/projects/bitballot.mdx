@@ -1,0 +1,29 @@
+---
+title: BitBallot
+description: BitBallot is a proof-of-concept blockchain-based voting system.
+date: "2021"
+published: true
+repository: JAWalmsley/BitBallot
+---
+
+
+<p align="center">
+  <img src="/images/BB_vote.png"/>
+</p>
+
+
+BitBallot is a proof-of-concept online voting system using blockchain. Online voting has many barriers before it is feasible, but adding blockchain technology increases the trust that the record hasn't been modified in any way.
+
+I created a separate backend and frontend communicating via a REST API that allowed registering votes, casting votes, viewing current vote tallies, and seeing the current state of the blockchain. I implemented a secondary program to generate "voter cards" containing a QR code that could be scanned on the website to automatically fill in the voter's information and allow them to cast their vote.
+
+<p align="center">
+  <img src="/images/BB_explorer.png"/>
+</p>
+
+## Built with
+* Flask
+* Python's `cryptography` module (`SHA256`, `ECDSA`)
+* HTML/CSS
+* JQuery
+* Bootstrap
+* REST API
