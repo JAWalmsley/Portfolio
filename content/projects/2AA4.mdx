@@ -1,0 +1,21 @@
+---
+title: Island Generator
+description: Generates a random Catan-like island map using Voronoi noise.
+date: "2023"
+published: true
+repository: JAWalmsley/SFWRENG-2AA4
+---
+
+![](/images/A4_island.svg)
+
+Final project for SFWRENG 2AA4 - Software Design I. Generates a random island with features such as lakes, rivers, mountains, and vegetation. The tiles on the map are generated with Voronoi noise, and the features are generated according to the elevation and hydration of each tile. The map is then exported as an SVG file. City names are generated using Markov chains to randomly generate realistic English city names, and roads connecting the cities to the capital take the shortest path as determined with Djikstra's algorithm.
+
+![](/images/A4_island2.svg)
+
+
+## Built with
+* Java
+* Maven
+* Apache Commons CLI
+* Markov chains
+* Djikstra's shortest path algorithm
