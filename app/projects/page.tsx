@@ -7,10 +7,12 @@ import { Article } from './article';
 import { Eye } from 'lucide-react';
 
 export const revalidate = 60;
+
+const favourites = ['duetomorrow', 'NEATJS'];
 export default async function ProjectsPage() {
-    let duetomorrow = allProjects.filter((p) => p.slug === 'duetomorrow')[0];
+    let showcase = allProjects.filter((p) => favourites.indexOf(p.slug) !== -1);
     const sorted = allProjects
-        .filter((p) => p !== duetomorrow)
+        .filter((p) => showcase.indexOf(p) === -1)
         .sort(
             (a, b) =>
                 new Date(b.date ?? Number.POSITIVE_INFINITY).getTime() -
@@ -31,12 +33,15 @@ export default async function ProjectsPage() {
                     </p>
                 </div>
                 <div className="w-full h-px bg-zinc-800" />
-                <div className="grid grid-cols-1 gap-4">
-                    <Card key={duetomorrow.slug}>
-                        <Article project={duetomorrow} />
-                    </Card>
+                <div className="grid grid-cols-2 gap-4">
+                    {showcase
+                        .map((project) => (
+                            <Card key={project.slug}>
+                                <Article project={project} />
+                            </Card>
+                        ))}
                 </div>
-                <div className="hidden w-full h-px md:block bg-zinc-800" />
+                {/* <div className="hidden w-full h-px md:block bg-zinc-800" /> */}
 
                 <div className="grid grid-cols-1 gap-4 mx-auto lg:mx-0 md:grid-cols-3">
                     <div className="grid grid-cols-1 gap-4">

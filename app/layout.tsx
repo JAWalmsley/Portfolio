@@ -9,13 +9,13 @@ export const metadata: Metadata = {
 		default: "Jack Walmsley",
 		template: "%s | Jack Walmsley",
 	},
-	description: "Software engineer at upstash.com and founder of planetfall.io",
+	description: "Software engineering co-op at McMaster University",
 	openGraph: {
-		title: "chronark.com",
+		title: "Jack Walmsley",
 		description:
-			"Software engineer at upstash.com and founder of planetfall.io",
-		url: "https://chronark.com",
-		siteName: "chronark.com",
+			"Software engineering co-op at McMaster University",
+		url: "https://jackwalmsley.com",
+		siteName: "Jack Walmsley",
 		images: [
 			{
 				url: "https://chronark.com/og.png",
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
 		},
 	},
 	twitter: {
-		title: "Chronark",
+		title: "Jack Walmsley",
 		card: "summary_large_image",
 	},
 	icons: {
