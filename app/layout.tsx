@@ -18,9 +18,9 @@ export const metadata: Metadata = {
 		siteName: "Jack Walmsley",
 		images: [
 			{
-				url: "https://chronark.com/og.png",
-				width: 1920,
-				height: 1080,
+				url: "https://jackwalmsley.com/og.png",
+				width: 1200,
+				height: 630,
 			},
 		],
 		locale: "en-US",
