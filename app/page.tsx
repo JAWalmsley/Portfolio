@@ -37,12 +37,12 @@ export default function Home() {
 				<h2 className="text-sm text-zinc-500 ">
 					Hi, I'm Jack. I'm a software engineering co-op student at McMaster University. I've been working on {" "}
 					<Link
-					href="https://github.com/JAWalmsley/NEATJS">
+					href="/projects/NEATJS/">
 						<u>NEATJS</u>
 					</Link>
 					{" "}, a genetic ML algorithm in Javascript, and {" "}
 					<Link
-					href="https://duetomorrow.ca">
+					href="/projects/duetomorrow/">
 						<u>DueTomorrow</u>
 					</Link>
 					, a webapp for managing deadlines and school grades.
